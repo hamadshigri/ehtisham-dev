@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="./images/icons/favicon.svg" rel="shortcut icon" type="image/x-icon">
+    <title>About | EhishamDesigns.</title>
+    <!-- Link to your Tailwind CSS stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+    <!-- NavBar Section -->
+
+    <header class="bg-white w-full block" id="header-bar">
+        <nav
+            class="2xl:w-4/5 xl:w-4/5 xl:px-0 w-full px-5 2xl:px-0 flex m-auto h-24 3xl:h-32 items-center text-white justify-between">
+            <div>
+                <a href="./index.html"><svg width="204" height="24" viewBox="0 0 204 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="group 3xl:w-[370px] 3xl:h-[50px]">
+                        <path
+                            d="M9.925 14.775L13.975 15.05C13.5 16.9 11.65 19.325 7.325 19.325C3.075 19.325 0.475 16.675 0.475 12.4C0.475 8.125 3 5.45 7.3 5.45C11.625 5.45 14.425 8.125 14.1 13.2H4.55C4.575 15.3 5.65 16.65 7.325 16.65C9.05 16.65 9.7 15.6 9.925 14.775ZM7.3 8.05C5.625 8.05 4.675 9.25 4.575 10.8H10.05C9.95 9.25 9 8.05 7.3 8.05ZM19.4234 7.525L19.5234 7.55C20.3734 6.35 21.6984 5.45 23.6484 5.45C26.1984 5.45 28.2234 6.95 28.2234 10.325V19H24.2484V11.275C24.2484 9.325 23.4484 8.625 21.9984 8.625C20.6734 8.625 19.4234 9.75 19.4234 11.95V19H15.4484V0.899999H19.4234V7.525ZM36.6568 16.025C37.0568 16.025 37.4068 16.025 37.7068 16V19C37.3318 19.05 36.1818 19.05 35.2068 19.05C32.3068 19.05 31.1068 18.45 31.1068 15.7V8.325H29.0318V5.75H31.1068V2.075H35.0818V5.75H37.7818V8.325H35.0818V14.725C35.0818 15.9 35.5318 16.025 36.6568 16.025ZM38.9109 0.899999H42.8859V4.025H38.9109V0.899999ZM38.9109 5.75H42.8859V19H38.9109V5.75ZM56.1273 9.375L52.4523 9.8C52.2273 8.625 51.3023 7.95 50.1023 7.95C48.9523 7.95 48.1273 8.45 48.1273 9.35C48.1273 10.2 49.0023 10.475 50.3273 10.675L51.7273 10.9C54.1523 11.3 56.5273 12.025 56.5273 15.05C56.5273 18.025 53.7773 19.325 50.2023 19.325C46.6773 19.325 44.1523 17.825 43.7023 15.15L47.4273 14.7C47.7023 16.125 48.7023 16.8 50.2273 16.8C51.6023 16.8 52.4773 16.2 52.4773 15.225C52.4773 14.4 51.5523 14.025 50.1273 13.8L48.6023 13.55C46.4523 13.225 44.1773 12.45 44.1773 9.55C44.1773 6.9 46.9523 5.45 50.0773 5.45C53.2523 5.45 55.6773 6.9 56.1273 9.375ZM61.7086 7.525L61.8086 7.55C62.6586 6.35 63.9836 5.45 65.9336 5.45C68.4836 5.45 70.5086 6.95 70.5086 10.325V19H66.5336V11.275C66.5336 9.325 65.7336 8.625 64.2836 8.625C62.9586 8.625 61.7086 9.75 61.7086 11.95V19H57.7336V0.899999H61.7086V7.525ZM84.7152 19H80.7902C80.5402 18.725 80.4152 18.05 80.4152 17.125C79.7152 18.55 77.9652 19.325 76.0652 19.325C73.7902 19.325 71.6402 17.875 71.6402 15.425C71.6402 12.575 73.6152 11.5 77.0652 11.075C79.7402 10.725 80.4152 10.375 80.4152 9.6C80.4152 8.7 79.6902 8.15 78.3152 8.15C77.1902 8.15 76.2402 8.775 75.8402 9.975L72.1652 9.525C72.7402 6.95 75.1402 5.45 78.4152 5.45C82.4902 5.45 84.3652 7.175 84.3652 9.85V16.45C84.3652 17.775 84.3902 18.5 84.7152 19ZM80.4152 13.9V12.625C79.9902 12.925 79.0152 13.075 77.8152 13.275C76.5902 13.475 75.6902 14.05 75.6902 15.15C75.6902 16.15 76.3902 16.725 77.4402 16.725C78.6902 16.725 80.4152 15.95 80.4152 13.9ZM102.233 5.45C104.708 5.45 106.683 6.95 106.683 10.325V19.025H102.708V11.275C102.708 9.325 101.933 8.625 100.608 8.625C99.358 8.625 98.258 9.65 98.258 11.825V19.025H94.283V11.275C94.283 9.325 93.533 8.625 92.208 8.625C90.958 8.625 89.858 9.65 89.858 11.825V19.025H85.883V5.75H89.683V7.55H89.783C90.608 6.375 91.883 5.45 93.833 5.45C95.533 5.45 96.958 6.15 97.708 7.65C98.708 6.5 99.983 5.45 102.233 5.45Z"
+                            fill="#AEB2BA" class="group-hover:fill-[#F2C94C] transition ease-in duration-300" />
+                        <path
+                            d="M113.498 5.45C115.373 5.45 116.698 6.15 117.473 7.325H117.573V0.899999H121.523V19H117.723V17.25H117.623C116.773 18.75 115.248 19.325 113.573 19.325C110.273 19.325 107.848 16.675 107.848 12.4C107.848 8.1 110.273 5.45 113.498 5.45ZM114.848 16.35C116.598 16.35 117.773 15.075 117.773 12.4C117.773 9.7 116.598 8.425 114.848 8.425C113.048 8.425 111.898 9.7 111.898 12.4C111.898 15.075 113.048 16.35 114.848 16.35ZM132.166 14.775L136.216 15.05C135.741 16.9 133.891 19.325 129.566 19.325C125.316 19.325 122.716 16.675 122.716 12.4C122.716 8.125 125.241 5.45 129.541 5.45C133.866 5.45 136.666 8.125 136.341 13.2H126.791C126.816 15.3 127.891 16.65 129.566 16.65C131.291 16.65 131.941 15.6 132.166 14.775ZM129.541 8.05C127.866 8.05 126.916 9.25 126.816 10.8H132.291C132.191 9.25 131.241 8.05 129.541 8.05ZM149.365 9.375L145.69 9.8C145.465 8.625 144.54 7.95 143.34 7.95C142.19 7.95 141.365 8.45 141.365 9.35C141.365 10.2 142.24 10.475 143.565 10.675L144.965 10.9C147.39 11.3 149.765 12.025 149.765 15.05C149.765 18.025 147.015 19.325 143.44 19.325C139.915 19.325 137.39 17.825 136.94 15.15L140.665 14.7C140.94 16.125 141.94 16.8 143.465 16.8C144.84 16.8 145.715 16.2 145.715 15.225C145.715 14.4 144.79 14.025 143.365 13.8L141.84 13.55C139.69 13.225 137.415 12.45 137.415 9.55C137.415 6.9 140.19 5.45 143.315 5.45C146.49 5.45 148.915 6.9 149.365 9.375ZM150.996 0.899999H154.971V4.025H150.996V0.899999ZM150.996 5.75H154.971V19H150.996V5.75ZM169.812 5.75V17.975C169.812 22.425 166.812 23.925 163.012 23.925C159.762 23.925 157.137 22.675 156.312 19.525L160.262 19.15C160.662 20.5 161.562 21.05 163.012 21.05C164.687 21.05 165.837 20.2 165.837 17.9V16.625H165.737C164.962 17.725 163.687 18.325 161.812 18.325C158.662 18.325 156.237 15.875 156.237 11.875C156.237 7.9 158.662 5.45 161.912 5.45C163.562 5.45 165.062 5.95 165.912 7.375H166.012V5.75H169.812ZM163.162 15.4C164.887 15.4 166.037 14.05 166.037 11.875C166.037 9.75 164.887 8.425 163.162 8.425C161.412 8.425 160.287 9.75 160.287 11.875C160.287 14.05 161.412 15.4 163.162 15.4ZM175.132 7.525L175.232 7.55C176.057 6.35 177.407 5.45 179.457 5.45C182.082 5.45 184.107 6.95 184.107 10.325V19H180.132V11.275C180.132 9.325 179.332 8.625 177.882 8.625C176.532 8.625 175.307 9.65 175.307 11.825V19H171.332V5.75H175.132V7.525ZM197.314 9.375L193.639 9.8C193.414 8.625 192.489 7.95 191.289 7.95C190.139 7.95 189.314 8.45 189.314 9.35C189.314 10.2 190.189 10.475 191.514 10.675L192.914 10.9C195.339 11.3 197.714 12.025 197.714 15.05C197.714 18.025 194.964 19.325 191.389 19.325C187.864 19.325 185.339 17.825 184.889 15.15L188.614 14.7C188.889 16.125 189.889 16.8 191.414 16.8C192.789 16.8 193.664 16.2 193.664 15.225C193.664 14.4 192.739 14.025 191.314 13.8L189.789 13.55C187.639 13.225 185.364 12.45 185.364 9.55C185.364 6.9 188.139 5.45 191.264 5.45C194.439 5.45 196.864 6.9 197.314 9.375ZM199.045 14.875H203.42V19H199.045V14.875Z"
+                            fill="#030712" />
+                    </svg></a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="./contact.html"><button
+                        class="hidden 2xl:flex 2xl:items-center 2xl:text-[#030712] 2xl:border 2xl:border-[#030712] 2xl:rounded-full 2xl:py-3 2xl:px-5 2xl:hover:bg-primary-color 2xl:hover:text-white group 2xl:font-Inter-Tight 2xl:font-semibold transition ease-in duration-300 3xl:text-[30px] 3xl:py-4 3xl:px-8">Let's
+                        Talk <img src="./images/ArrowRight.svg" alt="arrow-right"
+                            class="2xl:ml-3 group-hover:invert transition ease-in duration-300"></button></a>
+                <svg onclick="openNav()" width="68px" height="48px" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="border border-[#030712] py-3 px-5 rounded-full hover:bg-primary-color group cursor-pointer noHighlight transition ease-in duration-300 3xl:w-[100px] 3xl:h-[74px]">
+                    <g id="List">
+                        <path id="Vector" d="M3.125 10H16.875" stroke="#030712" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="group-hover:invert transition ease-in duration-300" />
+                        <path id="Vector_2" d="M3.125 5H16.875" stroke="#030712" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="group-hover:invert transition ease-in duration-300" />
+                        <path id="Vector_3" d="M3.125 15H16.875" stroke="#030712" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="group-hover:invert transition ease-in duration-300" />
+                    </g>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <!-- Nav Menu -->
+    <header class="bg-[#030712] w-full sw-full h-screen duration-2000 hidden fixed top-0 left-0 z-50 no-user-select"
+        id="navbar">
+        <nav
+            class="2xl:w-4/5 xl:w-4/5 xl:px-0 px-5 2xl:px-0 flex m-auto h-24 items-center text-white justify-between 3xl:h-32">
+            <div>
+                <a href="./index.html"><svg width="204" height="24" viewBox="0 0 204 24" fill="none" onclick="openNav()"
+                        xmlns="http://www.w3.org/2000/svg" class="group 3xl:w-[370px] 3xl:h-[50px]">
+                        <path
+                            d="M9.925 14.775L13.975 15.05C13.5 16.9 11.65 19.325 7.325 19.325C3.075 19.325 0.475 16.675 0.475 12.4C0.475 8.125 3 5.45 7.3 5.45C11.625 5.45 14.425 8.125 14.1 13.2H4.55C4.575 15.3 5.65 16.65 7.325 16.65C9.05 16.65 9.7 15.6 9.925 14.775ZM7.3 8.05C5.625 8.05 4.675 9.25 4.575 10.8H10.05C9.95 9.25 9 8.05 7.3 8.05ZM19.4234 7.525L19.5234 7.55C20.3734 6.35 21.6984 5.45 23.6484 5.45C26.1984 5.45 28.2234 6.95 28.2234 10.325V19H24.2484V11.275C24.2484 9.325 23.4484 8.625 21.9984 8.625C20.6734 8.625 19.4234 9.75 19.4234 11.95V19H15.4484V0.899999H19.4234V7.525ZM36.6568 16.025C37.0568 16.025 37.4068 16.025 37.7068 16V19C37.3318 19.05 36.1818 19.05 35.2068 19.05C32.3068 19.05 31.1068 18.45 31.1068 15.7V8.325H29.0318V5.75H31.1068V2.075H35.0818V5.75H37.7818V8.325H35.0818V14.725C35.0818 15.9 35.5318 16.025 36.6568 16.025ZM38.9109 0.899999H42.8859V4.025H38.9109V0.899999ZM38.9109 5.75H42.8859V19H38.9109V5.75ZM56.1273 9.375L52.4523 9.8C52.2273 8.625 51.3023 7.95 50.1023 7.95C48.9523 7.95 48.1273 8.45 48.1273 9.35C48.1273 10.2 49.0023 10.475 50.3273 10.675L51.7273 10.9C54.1523 11.3 56.5273 12.025 56.5273 15.05C56.5273 18.025 53.7773 19.325 50.2023 19.325C46.6773 19.325 44.1523 17.825 43.7023 15.15L47.4273 14.7C47.7023 16.125 48.7023 16.8 50.2273 16.8C51.6023 16.8 52.4773 16.2 52.4773 15.225C52.4773 14.4 51.5523 14.025 50.1273 13.8L48.6023 13.55C46.4523 13.225 44.1773 12.45 44.1773 9.55C44.1773 6.9 46.9523 5.45 50.0773 5.45C53.2523 5.45 55.6773 6.9 56.1273 9.375ZM61.7086 7.525L61.8086 7.55C62.6586 6.35 63.9836 5.45 65.9336 5.45C68.4836 5.45 70.5086 6.95 70.5086 10.325V19H66.5336V11.275C66.5336 9.325 65.7336 8.625 64.2836 8.625C62.9586 8.625 61.7086 9.75 61.7086 11.95V19H57.7336V0.899999H61.7086V7.525ZM84.7152 19H80.7902C80.5402 18.725 80.4152 18.05 80.4152 17.125C79.7152 18.55 77.9652 19.325 76.0652 19.325C73.7902 19.325 71.6402 17.875 71.6402 15.425C71.6402 12.575 73.6152 11.5 77.0652 11.075C79.7402 10.725 80.4152 10.375 80.4152 9.6C80.4152 8.7 79.6902 8.15 78.3152 8.15C77.1902 8.15 76.2402 8.775 75.8402 9.975L72.1652 9.525C72.7402 6.95 75.1402 5.45 78.4152 5.45C82.4902 5.45 84.3652 7.175 84.3652 9.85V16.45C84.3652 17.775 84.3902 18.5 84.7152 19ZM80.4152 13.9V12.625C79.9902 12.925 79.0152 13.075 77.8152 13.275C76.5902 13.475 75.6902 14.05 75.6902 15.15C75.6902 16.15 76.3902 16.725 77.4402 16.725C78.6902 16.725 80.4152 15.95 80.4152 13.9ZM102.233 5.45C104.708 5.45 106.683 6.95 106.683 10.325V19.025H102.708V11.275C102.708 9.325 101.933 8.625 100.608 8.625C99.358 8.625 98.258 9.65 98.258 11.825V19.025H94.283V11.275C94.283 9.325 93.533 8.625 92.208 8.625C90.958 8.625 89.858 9.65 89.858 11.825V19.025H85.883V5.75H89.683V7.55H89.783C90.608 6.375 91.883 5.45 93.833 5.45C95.533 5.45 96.958 6.15 97.708 7.65C98.708 6.5 99.983 5.45 102.233 5.45Z"
+                            fill="#AEB2BA" class="group-hover:fill-[#F2C94C] transition ease-in duration-300" />
+                        <path
+                            d="M113.498 5.45C115.373 5.45 116.698 6.15 117.473 7.325H117.573V0.899999H121.523V19H117.723V17.25H117.623C116.773 18.75 115.248 19.325 113.573 19.325C110.273 19.325 107.848 16.675 107.848 12.4C107.848 8.1 110.273 5.45 113.498 5.45ZM114.848 16.35C116.598 16.35 117.773 15.075 117.773 12.4C117.773 9.7 116.598 8.425 114.848 8.425C113.048 8.425 111.898 9.7 111.898 12.4C111.898 15.075 113.048 16.35 114.848 16.35ZM132.166 14.775L136.216 15.05C135.741 16.9 133.891 19.325 129.566 19.325C125.316 19.325 122.716 16.675 122.716 12.4C122.716 8.125 125.241 5.45 129.541 5.45C133.866 5.45 136.666 8.125 136.341 13.2H126.791C126.816 15.3 127.891 16.65 129.566 16.65C131.291 16.65 131.941 15.6 132.166 14.775ZM129.541 8.05C127.866 8.05 126.916 9.25 126.816 10.8H132.291C132.191 9.25 131.241 8.05 129.541 8.05ZM149.365 9.375L145.69 9.8C145.465 8.625 144.54 7.95 143.34 7.95C142.19 7.95 141.365 8.45 141.365 9.35C141.365 10.2 142.24 10.475 143.565 10.675L144.965 10.9C147.39 11.3 149.765 12.025 149.765 15.05C149.765 18.025 147.015 19.325 143.44 19.325C139.915 19.325 137.39 17.825 136.94 15.15L140.665 14.7C140.94 16.125 141.94 16.8 143.465 16.8C144.84 16.8 145.715 16.2 145.715 15.225C145.715 14.4 144.79 14.025 143.365 13.8L141.84 13.55C139.69 13.225 137.415 12.45 137.415 9.55C137.415 6.9 140.19 5.45 143.315 5.45C146.49 5.45 148.915 6.9 149.365 9.375ZM150.996 0.899999H154.971V4.025H150.996V0.899999ZM150.996 5.75H154.971V19H150.996V5.75ZM169.812 5.75V17.975C169.812 22.425 166.812 23.925 163.012 23.925C159.762 23.925 157.137 22.675 156.312 19.525L160.262 19.15C160.662 20.5 161.562 21.05 163.012 21.05C164.687 21.05 165.837 20.2 165.837 17.9V16.625H165.737C164.962 17.725 163.687 18.325 161.812 18.325C158.662 18.325 156.237 15.875 156.237 11.875C156.237 7.9 158.662 5.45 161.912 5.45C163.562 5.45 165.062 5.95 165.912 7.375H166.012V5.75H169.812ZM163.162 15.4C164.887 15.4 166.037 14.05 166.037 11.875C166.037 9.75 164.887 8.425 163.162 8.425C161.412 8.425 160.287 9.75 160.287 11.875C160.287 14.05 161.412 15.4 163.162 15.4ZM175.132 7.525L175.232 7.55C176.057 6.35 177.407 5.45 179.457 5.45C182.082 5.45 184.107 6.95 184.107 10.325V19H180.132V11.275C180.132 9.325 179.332 8.625 177.882 8.625C176.532 8.625 175.307 9.65 175.307 11.825V19H171.332V5.75H175.132V7.525ZM197.314 9.375L193.639 9.8C193.414 8.625 192.489 7.95 191.289 7.95C190.139 7.95 189.314 8.45 189.314 9.35C189.314 10.2 190.189 10.475 191.514 10.675L192.914 10.9C195.339 11.3 197.714 12.025 197.714 15.05C197.714 18.025 194.964 19.325 191.389 19.325C187.864 19.325 185.339 17.825 184.889 15.15L188.614 14.7C188.889 16.125 189.889 16.8 191.414 16.8C192.789 16.8 193.664 16.2 193.664 15.225C193.664 14.4 192.739 14.025 191.314 13.8L189.789 13.55C187.639 13.225 185.364 12.45 185.364 9.55C185.364 6.9 188.139 5.45 191.264 5.45C194.439 5.45 196.864 6.9 197.314 9.375ZM199.045 14.875H203.42V19H199.045V14.875Z"
+                            fill="white" />
+                    </svg></a>
+            </div>
+            <div class="flex space-x-4 items-center text-left">
+                <a href="./contact.html"><button
+                        class="hidden 2xl:flex 2xl:items-center 2xl:text-white 2xl:border 2xl:border-white 2xl:rounded-full 2xl:py-3 2xl:px-5 2xl:hover:bg-[#F2C94C] group hover:border-transparent 2xl:font-Inter-Tight 2xl:font-semibold transition ease-in duration-300 3xl:text-[30px] 3xl:py-4 3xl:px-8">Let's
+                        Talk <img src="./images/ArrowRight.svg" alt="arrow-right" class="2xl:ml-3 invert"></button></a>
+                <svg onclick="closeNav()" width="72px" height="50px" viewBox="0 0 68 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="border border-[#030712] rounded-full hover:bg-[#F2C94C] group cursor-pointer transition ease-in duration-300 3xl:w-[100px] 3xl:h-[74px]">
+                    <path d="M39.625 18.375L28.375 29.625" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" class="group-hover:fill-black" />
+                    <path d="M39.625 29.625L28.375 18.375" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" class="group-hover:fill-black" />
+                    <rect x="0.5" y="0.5" width="67" height="47" rx="23.5" stroke="white" />
+                </svg>
+            </div>
+        </nav>
+        <div class="2xl:bg-primary-color w-full h-full">
+            <div class="2xl:w-4/5 xl:w-4/5 xl:px-0 px-5 m-auto py-10 2xl:py-[72px] border-y border-[#1F2937]">
+                <div class="flex justify-between mb-8 3xl:mb-[45px]">
+                    <div>
+                        <a href="./index.html"><span
+                                class="text-white hover:text-[#F2C94C] text-[36px] 2xl:text-7xl font-Inter-Tight font-semibold menu-text transition ease-in duration-300">Home</span></a>
+                        <span class="text-[#6B7280] text-[22px] font-Inter-Tight font-normal ml-4">(01)</span>
+                    </div>
+                    <div>
+                        <a href="./index.html"><button
+                                class="flex items-center justify-center border border-white rounded-full py-3 w-20 hover:bg-[#F2C94C] group transition ease-in duration-300 3xl:py-4"><img
+                                    src="./images/ArrowRight.svg" alt="arrow-right"
+                                    class="invert transition ease-in duration-300"></button></a>
+                    </div>
+                </div>
+                <div class="flex justify-between mb-8 3xl:mb-[45px]">
+                    <div>
+                        <a href="./About.html"><span
+                                class="text-white hover:text-[#F2C94C] text-[36px] 2xl:text-7xl font-Inter-Tight font-semibold menu-text transition ease-in duration-300">About
+                                Me</span></a>
+                        <span class="text-[#6B7280] text-[22px] font-Inter-Tight font-normal ml-4">(02)</span>
+                    </div>
+                    <div>
+                        <a href="#"><button
+                                class="flex items-center justify-center border border-white rounded-full py-3 w-20 hover:bg-[#F2C94C] group transition ease-in duration-300 3xl:py-4"><img
+                                    src="./images/ArrowRight.svg" alt="arrow-right"
+                                    class="invert transition ease-in duration-300"></button></a>
+                    </div>
+                </div>
+                <div class="flex justify-between mb-8 3xl:mb-[45px]">
+                    <div>
+                        <a href="./work.html"><span
+                                class="text-white hover:text-[#F2C94C] text-[36px] 2xl:text-7xl font-Inter-Tight font-semibold menu-text transition ease-in duration-300">Works</span></a>
+                        <span class="text-[#6B7280] text-[22px] font-Inter-Tight font-normal ml-4">(03)</span>
+                    </div>
+                    <div>
+                        <a href="#"><button
+                                class="flex items-center justify-center border border-white rounded-full py-3 w-20 hover:bg-[#F2C94C] group transition ease-in duration-300 3xl:py-4"><img
+                                    src="./images/ArrowRight.svg" alt="arrow-right"
+                                    class="invert transition ease-in duration-300"></button></a>
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <a href="#"><span
+                                class="text-white hover:text-[#F2C94C] text-[36px] 2xl:text-7xl font-Inter-Tight font-semibold menu-text transition ease-in duration-300">Insights</span>
+                            <span class="text-[#6B7280] text-[22px] font-Inter-Tight font-normal ml-4">(04)</span>
+                    </div>
+                    <div>
+                        <a href="./index.html"><button
+                                class="flex items-center justify-center border border-white rounded-full py-3 w-20 hover:bg-[#F2C94C] group transition ease-in duration-300 3xl:py-4"><img
+                                    src="./images/ArrowRight.svg" alt="arrow-right"
+                                    class="invert transition ease-in duration-300"></button></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="2xl:w-4/5 xl:w-4/5 xl:px-0 px-5 m-auto py-5 2xl:py-[72px] border-[#1F2937] flex flex-col 2xl:flex-row justify-between 3xl:flex-col 3xl:gap-y-32">
+                <div>
+                    <p class="text-[#6B7280] text-[22px] font-semibold mb-2 2xl:mb-12 3xl: text-[42px] 3xl:mb-[60px]">
+                        Follow me.</p>
+                    <div class="flex flex-col 2xl:flex-row">
+                        <div class="flex mr-10 group">
+                            <a href="#">
+                                <p
+                                    class="text-white uppercase font-Inter-Tight font-medium text-base group-hover:text-[#F2C94C] 3xl:text-[28px]">
+                                    Instagram</p>
+                            </a>
+                            <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    class="ml-3 group-hover:fill-[#F2C94C]" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ArrowUpRight">
+                                        <path id="Vector" d="M6 18L18 6" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path id="Vector_2" d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                        <div class="flex mr-10 group">
+                            <a href="#">
+                                <p
+                                    class="text-white uppercase font-Inter-Tight font-medium text-base hover:text-[#F2C94C] 3xl:text-[28px]">
+                                    Behance</p>
+                            </a>
+                            <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    class="ml-3 group-hover:fill-[#F2C94C]" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ArrowUpRight">
+                                        <path id="Vector" d="M6 18L18 6" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path id="Vector_2" d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                        <div class="flex mr-10 group">
+                            <a href="#">
+                                <p
+                                    class="text-white uppercase font-Inter-Tight font-medium text-base hover:text-[#F2C94C] 3xl:text-[28px]">
+                                    Twitter</p>
+                            </a>
+                            <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    class="ml-3 group-hover:fill-[#F2C94C]" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ArrowUpRight">
+                                        <path id="Vector" d="M6 18L18 6" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path id="Vector_2" d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                        <div class="flex group">
+                            <a href="#">
+                                <p
+                                    class="text-white uppercase font-Inter-Tight font-medium text-base hover:text-[#F2C94C] 3xl:text-[28px]">
+                                    Dribble</p>
+                            </a>
+                            <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    class="ml-3 group-hover:fill-[#F2C94C]" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ArrowUpRight">
+                                        <path id="Vector" d="M6 18L18 6" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path id="Vector_2" d="M8.25 6H18V15.75" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 2xl:mt-0">
+                    <p class="text-[#6B7280] text-[22px] font-semibold mb-2 3xl: text-[42px] 3xl:mb-[60px]">Stay
+                        connected
+                        with me.
+                    </p>
+                    <form action="" class="flex items-center relative w-[300px] 2xl:w-[380px] 3xl:w-[754px]">
+                        <input type="text" placeholder="Enter your email"
+                            class="bg-transparent focus:ring-0 focus:border-[#F2C94C] border-0 border-b-2 pt-5 placeholder:text-[#4B5563] pb-5 pl-0 w-[300px] 2xl:w-[380px] 3xl:w-[754px] text-white">
+                        <img src="./images/ArrowUpRight.png" alt="arrowUpRight" class="absolute right-0 bottom invert">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Nav Menu -->
+    </header>
+
+    <!-- End NavBar Section -->
+
+    <div class="bg-white w-full h-full sm:h-auto">
+        <div class="sm:w-4/5 px-5 m-auto py-10 sm:py-[72px] 3xl:pt-[150px] text-center">
+            <div class="sm:w-3/4 m-auto">
+                <span
+                    class="text-[#AEB2BA] text-[40px] sm:text-[104px] font-Inter-Tight font-bold leading-[56px] sm:leading-[110px]">About
+                    me,</span>
+                <span
+                    class="text-[#030712] text-[40px] sm:text-[104px] 2xl:text-[80px] 2xl:leading-[100px] font-Inter-Tight font-bold leading-[56px] sm:leading-[110px]">
+                    a Visual Designer living in Munich</span>
+                <p class="text-[#374151] font-Inter-Tight font-normal text-lg mt-6 sm:mt-10 3xl:text-[28px] 3xl:leading-[36px]">As a Senior Designer with
+                    over 10 years of experience, I specialize in creating intuitive and user-centered interfaces for a
+                    wide range of digital products and experiences.</p>
+            </div>
+
+            <!-- Carousel Posts -->
+            <div class="overflow-hidden pt-[72px]" x-data="{ slide: 0, totalSlides: 6 }">
+                <div class="flex">
+                    <div x-show="slide > 0" @click="slide -= 1" class="cursor-pointer px-2 py-1">Previous</div>
+                    <div x-show="slide < totalSlides - 3" @click="slide += 1" class="cursor-pointer px-2 py-1">Next
+                    </div>
+                </div>
+
+                <div x-transition:enter="transition-transform ease-out duration-300"
+                    x-transition:enter-start="transform translate-x-full"
+                    x-transition:enter-end="transform translate-x-0"
+                    x-transition:leave="transition-transform ease-out duration-300"
+                    x-transition:leave-start="transform translate-x-0"
+                    x-transition:leave-end="transform -translate-x-full" class="flex">
+
+                    <img src="./images/sportly-img.png" alt="Image 1" class="w-full inline-block">
+                    <img src="./images/Macbook_Air_Mockup_1 1.png" alt="Image 2" class="w-full inline-block">
+                    <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
+                    <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
+                    <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
+                    <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
+                </div>
+            </div>
+
+            <!-- End Carousel Posts -->
+        </div>
+    </div>
+
+    <!-- Counter Section -->
+
+    <div class="bg-white w-full h-full sm:h-auto">
+        <div class="flex justify-between sm:w-3/5 px-5 m-auto py-10 sm:py-0 sm:pb-[72px]">
+            <div>
+                <h2 class="text-[#030712] text-[34px] sm:text-[68px] font-Inter-Tight font-semibold 2xl:text-[56px] 3xl:text-[68px]">86</h2>
+                <p class="text-[#374151] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">Global Team Members</p>
+            </div>
+            <div>
+                <h2 class="text-[#030712] text-[34px] sm:text-[68px] font-Inter-Tight font-semibold 2xl:text-[56px] 3xl:text-[68px]">14</h2>
+                <p class="text-[#374151] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">Years in Business</p>
+            </div>
+            <div>
+                <h2 class="text-[#030712] text-[34px] sm:text-[68px] font-Inter-Tight font-semibold 2xl:text-[56px] 3xl:text-[68px]">500+</h2>
+                <p class="text-[#374151] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">Global Team Members</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Counter Section -->
+
+    <div class="bg-white w-full h-full sm:h-auto">
+        <div class="flex sm:w-3/5 px-5 sm:px-0 m-auto py-10 sm:py-0 sm:pb-[72px]">
+            <div class="sm:w-3/4 3xl:w-full">
+                <h2 class="text-[#030712] text-[34px] sm:text-[68px] font-Inter-Tight font-semibold 2xl:text-[48px]">San Francisco</h2>
+                <p class="text-[#374151] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">Headquarters</p>
+                <p class="text-[#374151] font-Inter-Tight font-normal leading-[27px] pt-6 3xl:text-[24px] 3xl:leading-[32px]">We believe in
+                    making fitness fun and convenient. That's why we've developed a
+                    cutting-edge mobile app and dashboard that allows you to effortlessly track and manage your
+                    sport
+                    activities. Whether you're an avid runner, a devoted cyclist, or a fitness enthusiast, Sportly
+                    has
+                    got you covered!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Years Section -->
+
+    <div class="bg-primary-color w-full h-full sm:h-auto">
+        <div class="flex flex-col sm:flex-row justify-between sm:w-3/5 px-5 m-auto py-10 sm:py-[72px] 3xl:px-0">
+            <div>
+                <p class="text-[#AEB2BA] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">2013-2015</p>
+                <h2 class="text-white text-[34px] sm:text-[56px] font-Inter-Tight font-semibold">2 years</h2>
+                <p class="text-[#AEB2BA] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">as a Product Designer at Uber</p>
+            </div>
+            <div>
+                <p class="text-[#AEB2BA] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">2013-2015</p>
+                <h2 class="text-white text-[34px] sm:text-[56px] font-Inter-Tight font-semibold">3 years</h2>
+                <p class="text-[#AEB2BA] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">as a Lead of Product Designer at Spotify
+                </p>
+            </div>
+            <div>
+                <p class="text-[#AEB2BA] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">2013-2015</p>
+                <h2 class="text-white text-[34px] sm:text-[56px] font-Inter-Tight font-semibold">5+ years</h2>
+                <p class="text-[#AEB2BA] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">as a Head of Product Designer at Rovio
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--End Years Section -->
+
+    <!-- Why Clay Section -->
+    <div class="bg-white w-full h-full sm:h-auto">
+        <div class="sm:w-4/5 px-5 m-auto py-10 sm:py-[72px]">
+            <h2
+                class="text-[#030712] text-center sm:text-left text-[34px] sm:text-[42px] font-Inter-Tight font-semibold 3xl:text-[48px]">
+                Why Clay</h2>
+            <div class="flex flex-col-reverse sm:flex-row items-center my-4">
+                <div class="sm:w-2/4 mt-10 sm:mt-0">
+                    <h3 class="text-[#AEB2BA] text-[34px] sm:text-[42px] font-Inter-Tight font-semibold">01</h3>
+                    <h2 class="text-[#030712] text-[26px] sm:text-[42px] font-Inter-Tight font-semibold">Team Led by
+                        Co-Founders</h2>
+                    <p class="text-[#374151] font-Inter-Tight font-normal leading-[27px] pt-6 3xl:text-[24px] 3xl:leading-[32px]">We believe in
+                        making fitness fun and convenient. That's why we've developed a
+                        cutting-edge mobile app and dashboard that allows you to effortlessly track and manage your
+                        sport
+                        activities. Whether you're an avid runner, a devoted cyclist, or a fitness enthusiast, Sportly
+                        has
+                        got you covered!</p>
+                </div>
+                <div class="sm:w-2/4 float-right">
+                    <img src="./images/co-founder-img.jpg" alt="co-founder-img" class="m-auto rounded">
+                </div>
+            </div>
+            <div class="flex flex-col-reverse sm:flex-row items-center mt-16">
+                <div class="sm:w-2/4 mt-10 sm:mt-0">
+                    <h3 class="text-[#AEB2BA] text-[34px] sm:text-[42px] font-Inter-Tight font-semibold">02</h3>
+                    <h2 class="text-[#030712] text-[26px] sm:text-[42px] font-Inter-Tight font-semibold">Collaboration
+                        Is Key</h2>
+                    <p class="text-[#374151] font-Inter-Tight font-normal leading-[27px] pt-6 3xl:text-[24px] 3xl:leading-[32px]">We believe in
+                        making fitness fun and convenient. That's why we've developed a
+                        cutting-edge mobile app and dashboard that allows you to effortlessly track and manage your
+                        sport
+                        activities. Whether you're an avid runner, a devoted cyclist, or a fitness enthusiast, Sportly
+                        has
+                        got you covered!</p>
+                </div>
+                <div class="sm:w-2/4 float-right">
+                    <img src="./images/collaboration-img.jpg" alt="collaboration-img"
+                        class="m-auto rounded w-[400] h-[400]">
+                </div>
+            </div>
+            <div class="flex flex-col-reverse sm:flex-row items-center mt-16">
+                <div class="sm:w-2/4 mt-10 sm:mt-0">
+                    <h3 class="text-[#AEB2BA] text-[34px] sm:text-[42px] font-Inter-Tight font-semibold">03</h3>
+                    <h2 class="text-[#030712] text-[26px] sm:text-[42px] font-Inter-Tight font-semibold">Our Work Is
+                        Future Proof</h2>
+                    <p class="text-[#374151] font-Inter-Tight font-normal leading-[27px] pt-6 3xl:text-[24px] 3xl:leading-[32px]">We believe in
+                        making fitness fun and convenient. That's why we've developed a
+                        cutting-edge mobile app and dashboard that allows you to effortlessly track and manage your
+                        sport
+                        activities. Whether you're an avid runner, a devoted cyclist, or a fitness enthusiast, Sportly
+                        has
+                        got you covered!</p>
+                </div>
+                <div class="sm:w-2/4 float-right">
+                    <img src="./images/team-work.jpg" alt="team-work" class="m-auto rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Why Clay Section -->
+
+    <!-- Capabilities Section -->
+    <div class="bg-primary-color w-full h-full sm:h-auto">
+        <div class="sm:w-4/5 px-5 sm:px-0 m-auto py-10 sm:py-[72px]">
+            <h2 class="text-white text-[34px] sm:text-[42px] font-Inter-Tight font-semibold 3xl:text-[48px]">Capabilities</h2>
+            <div class="3xl:flex 3xl:justify-between 3xl:margin-top:40px">
+                <div class="flex flex-col sm:mt-[72px] py-[30px] 3xl:mt-0">
+                    <div class="w-3/6 sm:w-1/4">
+                        <h3 class="text-white text-[26px] sm:text-[24px] font-Inter-Tight font-semibold 3xl:text-[34px]">Branding</h3>
+                    </div>
+                    <div class="flex flex-col basis-1/2">
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Brand Strategy</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Brand Architecture/p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Verbal Identity</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Visual Identity</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Brand Strategy</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Brand Guidlines</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col py-[30px]">
+                    <div class="sm:w-1/4">
+                        <h3 class="text-white text-[26px] sm:text-[24px] font-Inter-Tight font-semibold 3xl:text-[34px]">Digital Products
+                        </h3>
+                    </div>
+                    <div>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Consumer & Enterprise Software
+                        </p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">User Research & Testing</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">CX,UX & Interaction Design</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Design Systems</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col py-[30px]">
+                    <div class="sm:w-1/4">
+                        <h3 class="text-white text-[26px] sm:text-[24px] font-Inter-Tight font-semibold 3xl:text-[34px]">Websites</h3>
+                    </div>
+                    <div>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Consumer & Enterprise Software
+                        </p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">User Research & Testing</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">CX,UX & Interaction Design</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Design Systems</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col py-[30px]">
+                    <div class="sm:w-1/4 3xl:w-full">
+                        <h3 class="text-white text-[26px] sm:text-[24px] font-Inter-Tight font-semibold 3xl:text-[34px]">Content</h3>
+                    </div>
+                    <div>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Consumer & Enterprise Software
+                        </p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">User Research & Testing</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">CX,UX & Interaction Design</p>
+                        <p class="text-[#AEB2BA] font-Inter-Tight font-normal leading-[38px] 3xl:text-[22px]">Design Systems</p>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <!-- End Capabilities Section-->
+
+    <!-- Brand Logos Section-->
+    <div class="bg-white w-full py-12">
+        <div
+            class="2xl:w-4/5 xl:w-4/5 xl:px-0 2xl:grid-cols-6 grid grid-cols-2 sm:grid-cols-3 place-items-center items-center mx-auto px-5 2xl:px-0 gap-10">
+            <img src="./images/Pipefy.png" alt="pipefy-brand-logo"
+                class="w-[120px] h-12 3xl:w-[200px] 3xl:h-24 sm:place-self-start 2xl:place-self-start">
+            <img src="./images/teamwork.png" alt="teamwork-brand-logo" class="w-[178px] h-6 3xl:w-[200px] 3xl:h-12">
+            <img src="./images/dojo.png" alt="dojo-brand-logo"
+                class="w-[100px] h-12 sm:place-self-end 3xl:place-self-center 3xl:w-[175px] 3xl:h-16">
+            <img src="./images/Django.png" alt="django-brand-logo"
+                class="w-[120px] h-12 sm:place-self-start 3xl:place-self-center 3xl:w-[200px] 3xl:h-24">
+            <img src="./images/Rackspace.png" alt="rackspace-brand-logo" class="w-[156px] h-12 3xl:w-[200px] 3xl:h-24">
+            <img src="./images/Portal.png" alt="portal-brand-logo"
+                class="w-[120px] h-12 sm:place-self-end 3xl:place-self-center 3xl:w-[200px] 3xl:h-24">
+        </div>
+    </div>
+
+
+    <!-- End Brand Logos Section -->
+
+    <!-- Footer -->
+    <footer class="bg-primary-color w-full pt-[30px] pb-[50px]">
+        <div class="px-5 xl:w-4/5 xl:px-0 2xl:px-0 2xl:w-4/5 m-auto flex flex-col 2xl:flex-row justify-between">
+            <div class="py-12 2xl:py-[72px] flex flex-col">
+                <div>
+                    <a href="./index.html"><svg width="204" height="24" viewBox="0 0 204 24" fill="none"
+                            class="group w-[250px] 2xl:w-[330px] h-12 3xl:w-[370px]" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.925 14.775L13.975 15.05C13.5 16.9 11.65 19.325 7.325 19.325C3.075 19.325 0.475 16.675 0.475 12.4C0.475 8.125 3 5.45 7.3 5.45C11.625 5.45 14.425 8.125 14.1 13.2H4.55C4.575 15.3 5.65 16.65 7.325 16.65C9.05 16.65 9.7 15.6 9.925 14.775ZM7.3 8.05C5.625 8.05 4.675 9.25 4.575 10.8H10.05C9.95 9.25 9 8.05 7.3 8.05ZM19.4234 7.525L19.5234 7.55C20.3734 6.35 21.6984 5.45 23.6484 5.45C26.1984 5.45 28.2234 6.95 28.2234 10.325V19H24.2484V11.275C24.2484 9.325 23.4484 8.625 21.9984 8.625C20.6734 8.625 19.4234 9.75 19.4234 11.95V19H15.4484V0.899999H19.4234V7.525ZM36.6568 16.025C37.0568 16.025 37.4068 16.025 37.7068 16V19C37.3318 19.05 36.1818 19.05 35.2068 19.05C32.3068 19.05 31.1068 18.45 31.1068 15.7V8.325H29.0318V5.75H31.1068V2.075H35.0818V5.75H37.7818V8.325H35.0818V14.725C35.0818 15.9 35.5318 16.025 36.6568 16.025ZM38.9109 0.899999H42.8859V4.025H38.9109V0.899999ZM38.9109 5.75H42.8859V19H38.9109V5.75ZM56.1273 9.375L52.4523 9.8C52.2273 8.625 51.3023 7.95 50.1023 7.95C48.9523 7.95 48.1273 8.45 48.1273 9.35C48.1273 10.2 49.0023 10.475 50.3273 10.675L51.7273 10.9C54.1523 11.3 56.5273 12.025 56.5273 15.05C56.5273 18.025 53.7773 19.325 50.2023 19.325C46.6773 19.325 44.1523 17.825 43.7023 15.15L47.4273 14.7C47.7023 16.125 48.7023 16.8 50.2273 16.8C51.6023 16.8 52.4773 16.2 52.4773 15.225C52.4773 14.4 51.5523 14.025 50.1273 13.8L48.6023 13.55C46.4523 13.225 44.1773 12.45 44.1773 9.55C44.1773 6.9 46.9523 5.45 50.0773 5.45C53.2523 5.45 55.6773 6.9 56.1273 9.375ZM61.7086 7.525L61.8086 7.55C62.6586 6.35 63.9836 5.45 65.9336 5.45C68.4836 5.45 70.5086 6.95 70.5086 10.325V19H66.5336V11.275C66.5336 9.325 65.7336 8.625 64.2836 8.625C62.9586 8.625 61.7086 9.75 61.7086 11.95V19H57.7336V0.899999H61.7086V7.525ZM84.7152 19H80.7902C80.5402 18.725 80.4152 18.05 80.4152 17.125C79.7152 18.55 77.9652 19.325 76.0652 19.325C73.7902 19.325 71.6402 17.875 71.6402 15.425C71.6402 12.575 73.6152 11.5 77.0652 11.075C79.7402 10.725 80.4152 10.375 80.4152 9.6C80.4152 8.7 79.6902 8.15 78.3152 8.15C77.1902 8.15 76.2402 8.775 75.8402 9.975L72.1652 9.525C72.7402 6.95 75.1402 5.45 78.4152 5.45C82.4902 5.45 84.3652 7.175 84.3652 9.85V16.45C84.3652 17.775 84.3902 18.5 84.7152 19ZM80.4152 13.9V12.625C79.9902 12.925 79.0152 13.075 77.8152 13.275C76.5902 13.475 75.6902 14.05 75.6902 15.15C75.6902 16.15 76.3902 16.725 77.4402 16.725C78.6902 16.725 80.4152 15.95 80.4152 13.9ZM102.233 5.45C104.708 5.45 106.683 6.95 106.683 10.325V19.025H102.708V11.275C102.708 9.325 101.933 8.625 100.608 8.625C99.358 8.625 98.258 9.65 98.258 11.825V19.025H94.283V11.275C94.283 9.325 93.533 8.625 92.208 8.625C90.958 8.625 89.858 9.65 89.858 11.825V19.025H85.883V5.75H89.683V7.55H89.783C90.608 6.375 91.883 5.45 93.833 5.45C95.533 5.45 96.958 6.15 97.708 7.65C98.708 6.5 99.983 5.45 102.233 5.45Z"
+                                fill="#AEB2BA" class="group-hover:fill-[#F2C94C] transition ease-in duration-300" />
+                            <path
+                                d="M113.498 5.45C115.373 5.45 116.698 6.15 117.473 7.325H117.573V0.899999H121.523V19H117.723V17.25H117.623C116.773 18.75 115.248 19.325 113.573 19.325C110.273 19.325 107.848 16.675 107.848 12.4C107.848 8.1 110.273 5.45 113.498 5.45ZM114.848 16.35C116.598 16.35 117.773 15.075 117.773 12.4C117.773 9.7 116.598 8.425 114.848 8.425C113.048 8.425 111.898 9.7 111.898 12.4C111.898 15.075 113.048 16.35 114.848 16.35ZM132.166 14.775L136.216 15.05C135.741 16.9 133.891 19.325 129.566 19.325C125.316 19.325 122.716 16.675 122.716 12.4C122.716 8.125 125.241 5.45 129.541 5.45C133.866 5.45 136.666 8.125 136.341 13.2H126.791C126.816 15.3 127.891 16.65 129.566 16.65C131.291 16.65 131.941 15.6 132.166 14.775ZM129.541 8.05C127.866 8.05 126.916 9.25 126.816 10.8H132.291C132.191 9.25 131.241 8.05 129.541 8.05ZM149.365 9.375L145.69 9.8C145.465 8.625 144.54 7.95 143.34 7.95C142.19 7.95 141.365 8.45 141.365 9.35C141.365 10.2 142.24 10.475 143.565 10.675L144.965 10.9C147.39 11.3 149.765 12.025 149.765 15.05C149.765 18.025 147.015 19.325 143.44 19.325C139.915 19.325 137.39 17.825 136.94 15.15L140.665 14.7C140.94 16.125 141.94 16.8 143.465 16.8C144.84 16.8 145.715 16.2 145.715 15.225C145.715 14.4 144.79 14.025 143.365 13.8L141.84 13.55C139.69 13.225 137.415 12.45 137.415 9.55C137.415 6.9 140.19 5.45 143.315 5.45C146.49 5.45 148.915 6.9 149.365 9.375ZM150.996 0.899999H154.971V4.025H150.996V0.899999ZM150.996 5.75H154.971V19H150.996V5.75ZM169.812 5.75V17.975C169.812 22.425 166.812 23.925 163.012 23.925C159.762 23.925 157.137 22.675 156.312 19.525L160.262 19.15C160.662 20.5 161.562 21.05 163.012 21.05C164.687 21.05 165.837 20.2 165.837 17.9V16.625H165.737C164.962 17.725 163.687 18.325 161.812 18.325C158.662 18.325 156.237 15.875 156.237 11.875C156.237 7.9 158.662 5.45 161.912 5.45C163.562 5.45 165.062 5.95 165.912 7.375H166.012V5.75H169.812ZM163.162 15.4C164.887 15.4 166.037 14.05 166.037 11.875C166.037 9.75 164.887 8.425 163.162 8.425C161.412 8.425 160.287 9.75 160.287 11.875C160.287 14.05 161.412 15.4 163.162 15.4ZM175.132 7.525L175.232 7.55C176.057 6.35 177.407 5.45 179.457 5.45C182.082 5.45 184.107 6.95 184.107 10.325V19H180.132V11.275C180.132 9.325 179.332 8.625 177.882 8.625C176.532 8.625 175.307 9.65 175.307 11.825V19H171.332V5.75H175.132V7.525ZM197.314 9.375L193.639 9.8C193.414 8.625 192.489 7.95 191.289 7.95C190.139 7.95 189.314 8.45 189.314 9.35C189.314 10.2 190.189 10.475 191.514 10.675L192.914 10.9C195.339 11.3 197.714 12.025 197.714 15.05C197.714 18.025 194.964 19.325 191.389 19.325C187.864 19.325 185.339 17.825 184.889 15.15L188.614 14.7C188.889 16.125 189.889 16.8 191.414 16.8C192.789 16.8 193.664 16.2 193.664 15.225C193.664 14.4 192.739 14.025 191.314 13.8L189.789 13.55C187.639 13.225 185.364 12.45 185.364 9.55C185.364 6.9 188.139 5.45 191.264 5.45C194.439 5.45 196.864 6.9 197.314 9.375ZM199.045 14.875H203.42V19H199.045V14.875Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <p
+                        class="text-[#E5E7EB] pt-6 pb-8 font-Inter-Tight font-normal tracking-[0.36px] text-lg 3xl:text-[28px] 3xl:leading-[40px]">
+                        Product Designer deeply passionate about crafting digital experiences that create positive
+                        impacts
+                        on
+                        <br>
+                        individuals, society, and the environment
+                    </p>
+                </div>
+                <div class="group">
+                    <a href="mailto:ehtishamdesigns@gmail.com">
+                        <p
+                            class="text-white cursor-pointer font-Inter-Tight font-normal text-[24px] 2xl:text-[28px] 3xl:text-[38px]">
+                            ehtishamdesigns@gmail.com</p>
+                    </a>
+                    <div class="relative cursor-pointer h-[2px] m-1 overflow-hidden">
+                        <div
+                            class="w-[290px] 2xl:w-[350px] 3xl:w-[470px] h-full bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-start 2xl:items-center">
+                <div class="text-white uppercase pb-12 2xl:py-[72px]">
+                    <ul class="flex gap-4 font-Inter-Tight flex-col font-medium">
+                        <li class="mr-10 group hover:text-[#F2C94C] 3xl:text-[24px]">Home
+                            <div
+                                class="w-3/4 h-[2px] bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                            </div>
+                            <div
+                                class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                            </div>
+                        </li>
+
+                        <li class="mr-10 group hover:text-[#F2C94C] 3xl:text-[24px]"><a href="#">About Me</a>
+                            <div
+                                class="w-full h-[2px] bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                            </div>
+                            <div
+                                class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                            </div>
+                        </li>
+                        <li class="mr-10 group hover:text-[#F2C94C] 3xl:text-[24px]"><a href="#">Works</a>
+                            <div
+                                class="w-3/4 h-[2px] bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                            </div>
+                            <div
+                                class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                            </div>
+                        </li>
+                        <li class="mr-10 group hover:text-[#F2C94C] 3xl:text-[24px]"><a href="#">Insights</a>
+                            <div
+                                class="w-3/4 h-[2px] bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                            </div>
+                            <div
+                                class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="xl:w-4/5 xl:px-0 2xl:w-4/5 px-5 2xl:px-0 m-auto flex 2xl:justify-between flex-col 2xl:flex-row">
+            <div>
+                <p class="text-[#6B7280] text-[22px] font-Inter-Tight font-semibold 3xl:text-[34px]">Keep up with me if
+                    you
+                    can.</p>
+                <form action="" class="flex items-center relative w-[250px] 2xl:w-[380px] 3xl:w-[460px]">
+                    <input type="text" placeholder="Enter your email"
+                        class="bg-transparent focus:ring-0 focus:border-[#F2C94C] border-0 border-b-2 pt-5 placeholder:text-[#4B5563] pb-5 pl-0 w-[250px] 2xl:w-[380px] text-white 3xl:w-[460px]">
+                    <img src="./images/ArrowUpRight.png" alt="arrowUpRight" class="absolute right-0 bottom invert">
+                </form>
+            </div>
+            <div class="pt-[72px]">
+                <div class="flex items-center">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="mr-8 cursor-pointer 3xl:w-[30px] 3xl:h-[32px]">
+                        <g id="_Twitter">
+                            <path id="Vector"
+                                d="M17.5475 5.98396C17.5552 6.15996 17.5552 6.32796 17.5552 6.50396C17.563 11.84 13.6426 18 6.47319 18C4.35865 18 2.2827 17.368 0.5 16.184C0.808692 16.224 1.11738 16.24 1.42608 16.24C3.1779 16.24 4.88343 15.632 6.26483 14.504C4.59789 14.472 3.1316 13.344 2.62226 11.696C3.20877 11.816 3.81072 11.792 4.3818 11.624C2.56824 11.256 1.26401 9.59997 1.2563 7.67197C1.2563 7.65597 1.2563 7.63997 1.2563 7.62397C1.79651 7.93597 2.40617 8.11197 3.02356 8.12797C1.31803 6.94396 0.78554 4.58396 1.81966 2.73595C3.80301 5.26396 6.72015 6.79196 9.85337 6.95996C9.53696 5.55996 9.96913 4.08796 10.9801 3.09595C12.5467 1.56795 15.0162 1.64795 16.498 3.27195C17.37 3.09595 18.2112 2.75995 18.9752 2.28795C18.682 3.22395 18.0723 4.01596 17.262 4.51996C18.0337 4.42396 18.79 4.20796 19.5 3.88795C18.9752 4.70396 18.3115 5.40796 17.5475 5.98396Z"
+                                fill="white" class="hover:fill-[#F2C94C] mr-8" />
+                        </g>
+                    </svg>
+
+                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="mr-8 cursor-pointer 3xl:w-[30px] 3xl:h-[32px]">
+                        <g id="Group">
+                            <path id="Vector"
+                                d="M19.5881 2.19109C19.3574 1.33443 18.682 0.658976 17.8253 0.428334C16.2602 0 9.99996 0 9.99996 0C9.99996 0 3.73969 0 2.17462 0.41186C1.33443 0.642501 0.642501 1.33443 0.41186 2.19109C0 3.75616 0 7.00162 0 7.00162C0 7.00162 0 10.2635 0.41186 11.8121C0.642501 12.6688 1.31795 13.3443 2.17462 13.5749C3.75616 14.0032 9.99996 14.0032 9.99996 14.0032C9.99996 14.0032 16.2602 14.0032 17.8253 13.5914C18.682 13.3607 19.3574 12.6853 19.5881 11.8286C19.9999 10.2635 19.9999 7.01809 19.9999 7.01809C19.9999 7.01809 20.0164 3.75616 19.5881 2.19109Z"
+                                fill="white" class="hover:fill-[#F2C94C] mr-8" />
+                            <path id="Vector_2" d="M8.00684 10.0001L13.2127 7.00176L8.00684 4.00342V10.0001Z"
+                                fill="#030712" />
+                        </g>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="mr-8 cursor-pointer 3xl:w-[30px] 3xl:h-[32px]">
+                        <g id="_TikTok">
+                            <path id="Vector"
+                                d="M14.3668 0H10.914V13.6232C10.914 15.2464 9.58602 16.5797 7.9334 16.5797C6.28077 16.5797 4.95278 15.2464 4.95278 13.6232C4.95278 12.029 6.25127 10.7246 7.84488 10.6667V7.24639C4.33305 7.30433 1.5 10.1159 1.5 13.6232C1.5 17.1594 4.39207 20 7.96292 20C11.5337 20 14.4258 17.1304 14.4258 13.6232V6.63767C15.7243 7.56522 17.3179 8.11594 19 8.14495V4.72464C16.4031 4.63768 14.3668 2.55072 14.3668 0Z"
+                                fill="white" class="hover:fill-[#F2C94C] mr-8" />
+                        </g>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg"
+                        class="cursor-pointer 3xl:w-[30px] 3xl:h-[32px]">
+                        <g id="Group">
+                            <path id="Vector"
+                                d="M19.9437 5.8767C19.8957 4.81185 19.7237 4.08327 19.4796 3.44676C19.2236 2.79023 18.8835 2.22978 18.3274 1.67734C17.7713 1.1249 17.2152 0.776621 16.559 0.52442C15.9229 0.276221 15.1948 0.108086 14.1305 0.060048C13.0623 0.0120096 12.7223 0 10.0097 0C7.29317 0 6.95311 0.0120096 5.88889 0.060048C4.82468 0.108086 4.09654 0.280224 3.46041 0.52442C2.80028 0.780625 2.24016 1.1209 1.68805 1.67734C1.13594 2.23379 0.787874 2.79023 0.535824 3.44676C0.291775 4.08327 0.11974 4.81185 0.0717308 5.8767C0.0237211 6.94556 0.0117188 7.28583 0.0117188 10C0.0117188 12.7182 0.0237211 13.0584 0.0717308 14.1233C0.11974 15.1882 0.291775 15.9167 0.535824 16.5532C0.791875 17.2098 1.13194 17.7702 1.68805 18.3227C2.24016 18.8791 2.80028 19.2234 3.45641 19.4756C4.09253 19.7238 4.82068 19.8919 5.88489 19.94C6.95311 19.988 7.29317 20 10.0057 20C12.7223 20 13.0623 19.988 14.1265 19.94C15.1908 19.8919 15.9189 19.7198 16.555 19.4756C17.2112 19.2194 17.7713 18.8791 18.3234 18.3227C18.8755 17.7662 19.2236 17.2098 19.4756 16.5532C19.7237 15.9167 19.8917 15.1882 19.9397 14.1233C19.9877 13.0544 19.9997 12.7142 19.9997 10C19.9997 7.28583 19.9917 6.94155 19.9437 5.8767ZM18.1473 14.0432C18.1033 15.02 17.9393 15.5524 17.8033 15.9007C17.6232 16.3651 17.4032 16.7014 17.0511 17.0536C16.6991 17.4059 16.367 17.6181 15.8989 17.8062C15.5468 17.9424 15.0147 18.1065 14.0425 18.1505C12.9903 18.1986 12.6743 18.2106 10.0017 18.2106C7.32918 18.2106 7.01312 18.1986 5.96091 18.1505C4.98471 18.1065 4.45261 17.9424 4.10454 17.8062C3.64044 17.6261 3.30438 17.4059 2.95231 17.0536C2.60024 16.7014 2.38819 16.3691 2.20016 15.9007C2.06413 15.5484 1.9001 15.016 1.85609 14.0432C1.80808 12.9904 1.79608 12.6741 1.79608 10C1.79608 7.32586 1.80808 7.00961 1.85609 5.95677C1.9001 4.97998 2.06413 4.44756 2.20016 4.09928C2.38019 3.63491 2.60024 3.29864 2.95231 2.94636C3.30438 2.59408 3.63644 2.38191 4.10454 2.19376C4.45661 2.05765 4.98871 1.89351 5.96091 1.84948C7.01312 1.80144 7.32918 1.78943 10.0017 1.78943C12.6743 1.78943 12.9903 1.80144 14.0425 1.84948C15.0187 1.89351 15.5508 2.05765 15.8989 2.19376C16.363 2.3739 16.6991 2.59408 17.0511 2.94636C17.4032 3.29864 17.6152 3.63091 17.8033 4.09928C17.9393 4.45156 18.1033 4.98399 18.1473 5.95677C18.1954 7.00961 18.2074 7.32586 18.2074 10C18.2074 12.6741 18.1914 12.9904 18.1473 14.0432Z"
+                                fill="white" class="hover:fill-[#F2C94C]" />
+                            <path id="Vector_2"
+                                d="M10.0013 4.85986C7.16072 4.85986 4.86426 7.1617 4.86426 9.99998C4.86426 12.8422 7.16472 15.1401 10.0013 15.1401C12.8379 15.1401 15.1383 12.8342 15.1383 9.99998C15.1383 7.1577 12.8419 4.85986 10.0013 4.85986ZM10.0013 13.3346C8.16092 13.3346 6.66862 11.8414 6.66862 9.99998C6.66862 8.1585 8.16092 6.66531 10.0013 6.66531C11.8417 6.66531 13.334 8.1585 13.334 9.99998C13.334 11.8414 11.8417 13.3346 10.0013 13.3346Z"
+                                fill="white" class="hover:fill-[#F2C94C]" />
+                            <path id="Vector_3"
+                                d="M15.3389 5.86091C16.0018 5.86091 16.5392 5.32322 16.5392 4.65995C16.5392 3.99667 16.0018 3.45898 15.3389 3.45898C14.676 3.45898 14.1387 3.99667 14.1387 4.65995C14.1387 5.32322 14.676 5.86091 15.3389 5.86091Z"
+                                fill="white" class="hover:fill-[#F2C94C]" />
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-4/5 m-auto flex flex-col 2xl:flex-row justify-between mt-[84px] 2xl:mt-[100px] 2xl:pb-[50px]">
+            <div class="mb-4">
+                <ul class="flex justify-center gap-7 ">
+                    <li class="text-[#56616a] group text-[14px] font-Inter-Tight font-normal 3xl:text-[28px]"><a
+                            href="#">Privacy</a>
+                        <div
+                            class="w-full h-[2px] bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                        </div>
+                    </li>
+                    <li class="text-[#56616a] group text-[14px] font-Inter-Tight font-normal 3xl:text-[28px]"><a
+                            href="#">Terms</a>
+                        <div
+                            class="w-full h-[2px] bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                        </div>
+                    </li>
+                    <li class="text-[#56616a] group text-[14px] font-Inter-Tight font-normal 3xl:text-[28px]"><a
+                            href="#">Sitemap</a>
+                        <div
+                            class="w-full h-[2px] bg-[#56616a] transition ease-in-out duration-1000 group-hover:bg-white">
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent to-white transition-all duration-500 hover:to-transparent">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-[#4B5563] text-[14px] text-center font-Inter-Tight 3xl:text-[28px]">©2023 All Rights
+                Reserved. Designed with
+                🤍</p>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

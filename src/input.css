@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('../dist/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf');
+}
+::selection {
+    background-color: #F2C94C;
+  }
+.no-user-select {
+    user-select: none;
+  }
