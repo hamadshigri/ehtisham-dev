@@ -78,10 +78,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Carousel Post Functionality
-document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelector('[x-data]');
-    setInterval(() => {
-      carousel.__x.$data.slide = (carousel.__x.$data.slide + 1) % carousel.__x.$data.totalSlides;
-    }, 3000);
-  });
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const carousel = document.querySelector('.carousel-inner');
+
+let currentIndex = 0;
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % document.querySelectorAll('.carousel-item').length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + document.querySelectorAll('.carousel-item').length) % document.querySelectorAll('.carousel-item').length;
+  updateCarousel();
+});
+
+function updateCarousel() {
+  const newTransformValue = -currentIndex * 100 + '%';
+  carousel.style.transform = `translateX(${newTransformValue})`;
+}
+
 // End Carousel Post Functionality

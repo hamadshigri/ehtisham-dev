@@ -9,7 +9,7 @@
     <title>About | EhishamDesigns.</title>
     <!-- Link to your Tailwind CSS stylesheet -->
     <link rel="stylesheet" href="./style.css">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script> -->
 </head>
 
 <body>
@@ -224,37 +224,39 @@
             </div>
 
             <!-- Carousel Posts -->
-            <div class="overflow-hidden pt-[72px]" x-data="{ slide: 0, totalSlides: 6 }">
+            <div x-data="{ slide: 0, totalSlides: 6 }" x-init="initCarousel">
                 <div class="flex">
-                    <div x-show="slide > 0" @click="slide -= 1" class="cursor-pointer px-2 py-1">Previous</div>
-                    <div x-show="slide < totalSlides - 3" @click="slide += 1" class="cursor-pointer px-2 py-1">Next
-                    </div>
+                    <div x-show="slide > 0" @click="prevSlide" class="cursor-pointer px-2 py-1">Previous</div>
+                    <div x-show="slide < totalSlides - 1" @click="nextSlide" class="cursor-pointer px-2 py-1">Next</div>
                 </div>
-
+            
                 <div x-transition:enter="transition-transform ease-out duration-300"
                     x-transition:enter-start="transform translate-x-full"
                     x-transition:enter-end="transform translate-x-0"
                     x-transition:leave="transition-transform ease-out duration-300"
                     x-transition:leave-start="transform translate-x-0"
-                    x-transition:leave-end="transform -translate-x-full" class="flex">
-
+                    x-transition:leave-end="transform -translate-x-full" 
+                    x-bind:class="{ 'transition-transform': slide !== 0 }" 
+                    class="flex" x-ref="carousel">
+            
                     <img src="./images/sportly-img.png" alt="Image 1" class="w-full inline-block">
                     <img src="./images/Macbook_Air_Mockup_1 1.png" alt="Image 2" class="w-full inline-block">
                     <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
-                    <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
-                    <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
-                    <img src="./images/Rackspace.png" alt="Image 3" class="w-full inline-block">
+                    <img src="./images/Rackspace.png" alt="Image 4" class="w-full inline-block">
+                    <img src="./images/Rackspace.png" alt="Image 5" class="w-full inline-block">
+                    <img src="./images/Rackspace.png" alt="Image 6" class="w-full inline-block">
                 </div>
             </div>
 
             <!-- End Carousel Posts -->
+              
         </div>
     </div>
 
     <!-- Counter Section -->
 
     <div class="bg-white w-full h-full sm:h-auto">
-        <div class="flex justify-between sm:w-3/5 px-5 m-auto py-10 sm:py-0 sm:pb-[72px]">
+        <div class="flex justify-between sm:w-3/5 px-5 2xl:px-0 m-auto py-10 sm:py-0 sm:pb-[72px]">
             <div>
                 <h2 class="text-[#030712] text-[34px] sm:text-[68px] font-Inter-Tight font-semibold 2xl:text-[56px] 3xl:text-[68px]">86</h2>
                 <p class="text-[#374151] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">Global Team Members</p>
@@ -291,7 +293,7 @@
     <!-- Years Section -->
 
     <div class="bg-primary-color w-full h-full sm:h-auto">
-        <div class="flex flex-col sm:flex-row justify-between sm:w-3/5 px-5 m-auto py-10 sm:py-[72px] 3xl:px-0">
+        <div class="flex flex-col sm:flex-row justify-between sm:w-3/5 px-5 m-auto py-10 sm:py-[72px] 2xl:px-0">
             <div>
                 <p class="text-[#AEB2BA] font-Inter-Tight font-normal text-lg 3xl:text-[24px]">2013-2015</p>
                 <h2 class="text-white text-[34px] sm:text-[56px] font-Inter-Tight font-semibold">2 years</h2>
@@ -636,6 +638,7 @@
     </footer>
     <!-- End Footer -->
 
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
