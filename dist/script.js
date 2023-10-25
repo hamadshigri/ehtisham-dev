@@ -78,25 +78,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Carousel Post Functionality
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-const carousel = document.querySelector('.carousel-inner');
-
-let currentIndex = 0;
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % document.querySelectorAll('.carousel-item').length;
-  updateCarousel();
-});
-
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + document.querySelectorAll('.carousel-item').length) % document.querySelectorAll('.carousel-item').length;
-  updateCarousel();
-});
-
-function updateCarousel() {
-  const newTransformValue = -currentIndex * 100 + '%';
-  carousel.style.transform = `translateX(${newTransformValue})`;
-}
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true, 
+      autoplayTimeout: 3000,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+    });
+  });
 
 // End Carousel Post Functionality
+
