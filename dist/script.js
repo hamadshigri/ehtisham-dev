@@ -116,22 +116,16 @@ function SendMail() {
         companyName: document.getElementById("companyName").value,
     };
 
-    // Add radio button values
-    var servicesOfferOptions = document.getElementsByName("servicesOffer");
-    for (var i = 0; i < servicesOfferOptions.length; i++) {
-        if (servicesOfferOptions[i].checked) {
-            params.servicesOffer = servicesOfferOptions[i].value;
-            break;
-        }
+    // Get selected servicesOffer
+    var selectedServicesOffer = document.querySelector('input[name="servicesOffer"]:checked');
+    if (selectedServicesOffer) {
+        params.servicesOffer = document.querySelector('label[for="' + selectedServicesOffer.id + '"]').innerText;
     }
 
-    // Add radio button values for budget range
-    var budgetRangeOptions = document.getElementsByName("budgetRange");
-    for (var i = 0; i < budgetRangeOptions.length; i++) {
-        if (budgetRangeOptions[i].checked) {
-            params.budgetRange = budgetRangeOptions[i].value;
-            break;
-        }
+    // Get selected budgetRange
+    var selectedBudgetRange = document.querySelector('input[name="budgetRange"]:checked');
+    if (selectedBudgetRange) {
+        params.budgetRange = document.querySelector('label[for="' + selectedBudgetRange.id + '"]').innerText;
     }
 
     params.message = document.getElementById("message").value;
@@ -139,11 +133,12 @@ function SendMail() {
     // Now you can use the 'params' object to send your email using Email.js or perform any other actions.
 
     // Example using Email.js
-    emailjs.send("service_2szdwkf", "template_p29ukpn", params)
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
         .then(function(response) {
             console.log("Sent successfully", response);
         }, function(error) {
             console.log("Failed to send", error);
         });
 }
+
 // End Contact Form Functionality
