@@ -108,3 +108,21 @@ $(document).ready(function(){
 
 // End Carousel Post Functionality
 
+// Contact Form Functionality
+document.getElementById('myForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Collect form data
+    var formData = new FormData(this);
+
+    // Send email using Email.js
+    emailjs.sendForm('service_2szdwkf', 'template_p29ukpn', formData)
+        .then(function(response) {
+            console.log('Sent successfully', response);
+        }, function(error) {
+            console.log('Failed to send', error);
+        });
+});
+
+
+// End Contact Form Functionality
