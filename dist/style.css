@@ -828,16 +828,12 @@ select {
   margin-top: 2rem;
 }
 
-.mt-\[84px\] {
-  margin-top: 84px;
-}
-
-.mt-\[30px\] {
-  margin-top: 30px;
-}
-
 .mt-\[50px\] {
   margin-top: 50px;
+}
+
+.mt-\[84px\] {
+  margin-top: 84px;
 }
 
 .block {
@@ -960,6 +956,10 @@ select {
   width: 400;
 }
 
+.w-\[44px\] {
+  width: 44px;
+}
+
 .w-\[75px\] {
   width: 75px;
 }
@@ -972,27 +972,16 @@ select {
   width: 100%;
 }
 
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
 .basis-1\/2 {
   flex-basis: 50%;
-}
-
-.-translate-x-full {
-  --tw-translate-x: -100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-0 {
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-full {
-  --tw-translate-x: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -1199,11 +1188,6 @@ select {
   padding-right: 2.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1217,11 +1201,6 @@ select {
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-10 {
@@ -1336,12 +1315,20 @@ select {
   padding-top: 72px;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.font-Bebas {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .font-Inter-Tight {
@@ -1588,12 +1575,6 @@ select {
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-1000 {
   transition-duration: 1000ms;
 }
@@ -1614,14 +1595,16 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
 @font-face {
   font-family: 'Inter Tight';
 
   src: url('../dist/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+
+  src: url('../dist/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
 }
 
 ::-moz-selection {
@@ -1761,6 +1744,10 @@ select {
     margin-top: 72px;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1807,6 +1794,10 @@ select {
 
   .sm\:w-4\/5 {
     width: 80%;
+  }
+
+  .sm\:w-\[10\%\] {
+    width: 10%;
   }
 
   .sm\:grid-cols-3 {
@@ -1941,9 +1932,27 @@ select {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:h-\[60vh\] {
@@ -1993,6 +2002,14 @@ select {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
   .xl\:h-\[80vh\] {
     height: 80vh;
   }
@@ -2045,6 +2062,10 @@ select {
     margin-top: 100px;
   }
 
+  .\32xl\:block {
+    display: block;
+  }
+
   .\32xl\:flex {
     display: flex;
   }
@@ -2079,6 +2100,10 @@ select {
 
   .\32xl\:w-4\/5 {
     width: 80%;
+  }
+
+  .\32xl\:w-\[26px\] {
+    width: 26px;
   }
 
   .\32xl\:w-\[330px\] {
@@ -2175,11 +2200,6 @@ select {
     padding-right: 1.25rem;
   }
 
-  .\32xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .\32xl\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -2193,6 +2213,10 @@ select {
   .\32xl\:py-\[72px\] {
     padding-top: 72px;
     padding-bottom: 72px;
+  }
+
+  .\32xl\:pb-\[30px\] {
+    padding-bottom: 30px;
   }
 
   .\32xl\:pb-\[50px\] {
@@ -2211,6 +2235,10 @@ select {
     padding-top: 0px;
   }
 
+  .\32xl\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .\32xl\:pt-\[140px\] {
     padding-top: 140px;
   }
@@ -2221,14 +2249,6 @@ select {
 
   .\32xl\:pt-\[72px\] {
     padding-top: 72px;
-  }
-
-  .\32xl\:pb-0 {
-    padding-bottom: 0px;
-  }
-
-  .\32xl\:pb-\[30px\] {
-    padding-bottom: 30px;
   }
 
   .\32xl\:text-right {
@@ -2260,12 +2280,12 @@ select {
     font-size: 34px;
   }
 
-  .\32xl\:text-\[40px\] {
-    font-size: 40px;
-  }
-
   .\32xl\:text-\[48px\] {
     font-size: 48px;
+  }
+
+  .\32xl\:text-\[54px\] {
+    font-size: 54px;
   }
 
   .\32xl\:text-\[56px\] {
@@ -2321,6 +2341,10 @@ select {
     line-height: 78px;
   }
 
+  .\32xl\:leading-\[84px\] {
+    line-height: 84px;
+  }
+
   .\32xl\:leading-\[90px\] {
     line-height: 90px;
   }
@@ -2372,6 +2396,10 @@ select {
 
   .\33xl\:flex {
     display: flex;
+  }
+
+  .\33xl\:hidden {
+    display: none;
   }
 
   .\33xl\:h-12 {
@@ -2616,10 +2644,6 @@ select {
     font-size: 54px;
   }
 
-  .\33xl\:text-\[58px\] {
-    font-size: 58px;
-  }
-
   .\33xl\:text-\[68px\] {
     font-size: 68px;
   }
@@ -2638,6 +2662,10 @@ select {
 
   .\33xl\:leading-\[110px\] {
     line-height: 110px;
+  }
+
+  .\33xl\:leading-\[120px\] {
+    line-height: 120px;
   }
 
   .\33xl\:leading-\[140px\] {
@@ -2674,10 +2702,6 @@ select {
 
   .\33xl\:leading-\[50px\] {
     line-height: 50px;
-  }
-
-  .\33xl\:leading-\[70px\] {
-    line-height: 70px;
   }
 
   .\33xl\:text-\[\#464545\] {

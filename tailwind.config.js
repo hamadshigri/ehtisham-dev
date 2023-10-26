@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "Inter-Tight": ["Inter Tight", "sans-serif"],
+        "Bebas": ['"Bebas Neue"', "sans-serif"],
       },
       backgroundColor: {
         "primary-color": "#030712",
