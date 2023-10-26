@@ -230,15 +230,15 @@
     <!-- Contact Form -->
     <div class="bg-white w-full py-10">
         <div class="sm:w-2/5 3xl:w-2/5 m-auto px-5 py-0 sm:py-[72px] ">
-            <form action="" id="myForm">
+            <form action="">
                 <label for="" class="3xl:text-[34px] font-Inter-Tight font-normal">Name*</label><br><br>
-                <input type="text" name="name" placeholder="Hello..." required
+                <input type="text" id="name" name="name" placeholder="Hello..." required
                     class="w-full focus:ring-0 focus:border-[#F2C94C] border-0 border-b border-b-[#D1D5DB] !outline-none 3xl:placeholder:text-[28px]"><br><br><br>
                 <label for="" class="3xl:text-[34px] font-Inter-Tight font-normal">Email*</label><br><br>
                 <input type="email" id="email" name="email" placeholder="Where can I reply?" required
                     class="w-full focus:ring-0 focus:border-[#F2C94C] border-0 border-b border-b-[#D1D5DB] !outline-none 3xl:placeholder:text-[28px]"><br><br><br>
                 <label for="" class="3xl:text-[34px] font-Inter-Tight font-normal">Company Name</label><br><br>
-                <input type="text" name="companyName" placeholder="Your company or website?"
+                <input type="text" id="companyName" name="companyName" placeholder="Your company or website?"
                     class="w-full focus:ring-0 focus:border-[#F2C94C] border-0 border-b border-b-[#D1D5DB] !outline-none 3xl:placeholder:text-[28px]"><br><br><br>
                 <label for="" class="3xl:text-[34px] font-Inter-Tight font-normal">What’s in your mind?*</label><br><br>
                 <div class="flex flex-row flex-wrap gap-4">
@@ -362,8 +362,8 @@
                     required></textarea><br><br>
                 <div class="flex flex-col items-start 2xl:pr-0">
                     <button type="submit"
-                        class="bg-primary-color rounded-full py-3 px-10 text-[16px] 2xl:text-[18px] sm:flex sm:items-center text-white sm:rounded-full sm:py-3 sm:px-8 sm:bg-primary-color hover:bg-[#F2C94C] hover:text-[#030712] transition ease-in duration-300 group font-Inter-Tight font-semibold" onclick="SendMail()">Submit<img
-                            src="./images/ArrowRight.svg" alt="arrow-right"
+                        class="bg-primary-color rounded-full py-3 px-10 text-[16px] 2xl:text-[18px] sm:flex sm:items-center text-white sm:rounded-full sm:py-3 sm:px-8 sm:bg-primary-color hover:bg-[#F2C94C] hover:text-[#030712] transition ease-in duration-300 group font-Inter-Tight font-semibold"
+                        onclick="SendMail()">Submit<img src="./images/ArrowRight.svg" alt="arrow-right"
                             class="ml-3 inline-block invert group-hover:invert-0 transition ease-in duration-300"></button>
                 </div>
             </form>
@@ -546,8 +546,11 @@
     </footer>
     <!-- End Footer -->
     <script src="./script.js"></script>
-    <script>
-        emailjs.init("user_KA7EczbvOPNm1EV5w");
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("KA7EczbvOPNm1EV5w");
+        })();
     </script>
 </body>
 

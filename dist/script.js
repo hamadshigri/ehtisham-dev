@@ -109,20 +109,41 @@ $(document).ready(function(){
 // End Carousel Post Functionality
 
 // Contact Form Functionality
-document.getElementById('myForm').addEventListener('submit', function (event) {
-    event.preventDefault();
+function SendMail() {
+    var params = {
+        name: document.getElementById("name").value,
+        email_id: document.getElementById("email").value,
+        companyName: document.getElementById("companyName").value,
+    };
 
-    // Collect form data
-    var formData = new FormData(this);
+    // Add radio button values
+    var servicesOfferOptions = document.getElementsByName("servicesOffer");
+    for (var i = 0; i < servicesOfferOptions.length; i++) {
+        if (servicesOfferOptions[i].checked) {
+            params.servicesOffer = servicesOfferOptions[i].value;
+            break;
+        }
+    }
 
-    // Send email using Email.js
-    emailjs.sendForm('service_2szdwkf', 'template_p29ukpn', formData)
+    // Add radio button values for budget range
+    var budgetRangeOptions = document.getElementsByName("budgetRange");
+    for (var i = 0; i < budgetRangeOptions.length; i++) {
+        if (budgetRangeOptions[i].checked) {
+            params.budgetRange = budgetRangeOptions[i].value;
+            break;
+        }
+    }
+
+    params.message = document.getElementById("message").value;
+
+    // Now you can use the 'params' object to send your email using Email.js or perform any other actions.
+
+    // Example using Email.js
+    emailjs.send("service_2szdwkf", "template_p29ukpn", params)
         .then(function(response) {
-            console.log('Sent successfully', response);
+            console.log("Sent successfully", response);
         }, function(error) {
-            console.log('Failed to send', error);
+            console.log("Failed to send", error);
         });
-});
-
-
+}
 // End Contact Form Functionality
