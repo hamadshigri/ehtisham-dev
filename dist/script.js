@@ -14,8 +14,8 @@ function closeNav() {
 
 //  Radio Button Selection On Click
 document.addEventListener('DOMContentLoaded', function () {
-  const serviceRadioButtons = document.querySelectorAll('input[name="servicesOffer"]');
-  const budgetRadioButtons = document.querySelectorAll('input[name="budgetRange"]');
+  const serviceRadioButtons = document.querySelectorAll('input[name="What’s in your mind?"]');
+  const budgetRadioButtons = document.querySelectorAll('input[name="How much is your budget range?"]');
 
   function handleRadioChange(radioButtons) {
       radioButtons.forEach(function (radio) {
@@ -109,36 +109,36 @@ $(document).ready(function(){
 // End Carousel Post Functionality
 
 // Contact Form Functionality
-function SendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        email_id: document.getElementById("email").value,
-        companyName: document.getElementById("companyName").value,
-    };
+// function SendMail() {
+//     var params = {
+//         name: document.getElementById("name").value,
+//         email_id: document.getElementById("email").value,
+//         companyName: document.getElementById("companyName").value,
+//     };
 
-    // Get selected servicesOffer
-    var selectedServicesOffer = document.querySelector('input[name="servicesOffer"]:checked');
-    if (selectedServicesOffer) {
-        params.servicesOffer = document.querySelector('label[for="' + selectedServicesOffer.id + '"]').innerText;
-    }
+//     // Get selected servicesOffer
+//     var selectedServicesOffer = document.querySelector('input[name="servicesOffer"]:checked');
+//     if (selectedServicesOffer) {
+//         params.servicesOffer = document.querySelector('label[for="' + selectedServicesOffer.id + '"]').innerText;
+//     }
 
-    // Get selected budgetRange
-    var selectedBudgetRange = document.querySelector('input[name="budgetRange"]:checked');
-    if (selectedBudgetRange) {
-        params.budgetRange = document.querySelector('label[for="' + selectedBudgetRange.id + '"]').innerText;
-    }
+//     // Get selected budgetRange
+//     var selectedBudgetRange = document.querySelector('input[name="budgetRange"]:checked');
+//     if (selectedBudgetRange) {
+//         params.budgetRange = document.querySelector('label[for="' + selectedBudgetRange.id + '"]').innerText;
+//     }
 
-    params.message = document.getElementById("message").value;
+//     params.message = document.getElementById("message").value;
 
-    // Now you can use the 'params' object to send your email using Email.js or perform any other actions.
+//     // Now you can use the 'params' object to send your email using Email.js or perform any other actions.
 
-    // Example using Email.js
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
-        .then(function(response) {
-            console.log("Sent successfully", response);
-        }, function(error) {
-            console.log("Failed to send", error);
-        });
-}
+//     // Example using Email.js
+//     emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+//         .then(function(response) {
+//             console.log("Sent successfully", response);
+//         }, function(error) {
+//             console.log("Failed to send", error);
+//         });
+// }
 
 // End Contact Form Functionality
