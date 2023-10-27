@@ -107,38 +107,3 @@ $(document).ready(function(){
   });
 
 // End Carousel Post Functionality
-
-// Contact Form Functionality
-// function SendMail() {
-//     var params = {
-//         name: document.getElementById("name").value,
-//         email_id: document.getElementById("email").value,
-//         companyName: document.getElementById("companyName").value,
-//     };
-
-//     // Get selected servicesOffer
-//     var selectedServicesOffer = document.querySelector('input[name="servicesOffer"]:checked');
-//     if (selectedServicesOffer) {
-//         params.servicesOffer = document.querySelector('label[for="' + selectedServicesOffer.id + '"]').innerText;
-//     }
-
-//     // Get selected budgetRange
-//     var selectedBudgetRange = document.querySelector('input[name="budgetRange"]:checked');
-//     if (selectedBudgetRange) {
-//         params.budgetRange = document.querySelector('label[for="' + selectedBudgetRange.id + '"]').innerText;
-//     }
-
-//     params.message = document.getElementById("message").value;
-
-//     // Now you can use the 'params' object to send your email using Email.js or perform any other actions.
-
-//     // Example using Email.js
-//     emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
-//         .then(function(response) {
-//             console.log("Sent successfully", response);
-//         }, function(error) {
-//             console.log("Failed to send", error);
-//         });
-// }
-
-// End Contact Form Functionality
