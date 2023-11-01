@@ -2433,6 +2433,14 @@ select {
     padding-top: 3rem;
   }
 
+  .xl\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .xl\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
