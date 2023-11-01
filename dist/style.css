@@ -3180,6 +3180,10 @@ select {
     font-size: 84px;
   }
 
+  .\33xl\:text-\[120px\] {
+    font-size: 120px;
+  }
+
   .\33xl\:leading-\[100px\] {
     line-height: 100px;
   }
@@ -3230,6 +3234,10 @@ select {
 
   .\33xl\:leading-\[54px\] {
     line-height: 54px;
+  }
+
+  .\33xl\:leading-\[130px\] {
+    line-height: 130px;
   }
 
   .\33xl\:text-\[\#464545\] {
