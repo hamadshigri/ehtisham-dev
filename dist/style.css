@@ -2431,6 +2431,14 @@ select {
     font-size: 38px;
   }
 
+  .xl\:text-\[104px\] {
+    font-size: 104px;
+  }
+
+  .xl\:text-\[22px\] {
+    font-size: 22px;
+  }
+
   .xl\:font-semibold {
     font-weight: 600;
   }
@@ -2457,6 +2465,10 @@ select {
 
   .xl\:leading-\[74px\] {
     line-height: 74px;
+  }
+
+  .xl\:leading-\[104px\] {
+    line-height: 104px;
   }
 
   .xl\:text-\[\#030712\] {
