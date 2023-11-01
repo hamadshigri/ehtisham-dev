@@ -2197,6 +2197,14 @@ select {
     padding-top: 1rem;
   }
 
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .lg\:text-right {
     text-align: right;
   }
@@ -2714,6 +2722,31 @@ select {
     padding-bottom: 90px;
   }
 
+  .\32xl\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .\32xl\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .\32xl\:py-\[40px\] {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .\32xl\:py-\[50px\] {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .\32xl\:py-\[70px\] {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   .\32xl\:pb-\[20px\] {
     padding-bottom: 20px;
   }
@@ -2760,6 +2793,14 @@ select {
 
   .\32xl\:pb-\[0px\] {
     padding-bottom: 0px;
+  }
+
+  .\32xl\:pb-\[22px\] {
+    padding-bottom: 22px;
+  }
+
+  .\32xl\:pt-\[70px\] {
+    padding-top: 70px;
   }
 
   .\32xl\:font-Inter-Tight {
