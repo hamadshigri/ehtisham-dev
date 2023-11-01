@@ -2369,6 +2369,10 @@ select {
     padding-left: 2rem;
   }
 
+  .xl\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -2680,6 +2684,10 @@ select {
 
   .\32xl\:pt-\[72px\] {
     padding-top: 72px;
+  }
+
+  .\32xl\:pt-3 {
+    padding-top: 0.75rem;
   }
 
   .\32xl\:font-Inter-Tight {
