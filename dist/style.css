@@ -980,6 +980,14 @@ select {
   width: 100%;
 }
 
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
 .basis-1\/2 {
   flex-basis: 50%;
 }
@@ -1173,11 +1181,6 @@ select {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1231,6 +1234,11 @@ select {
   padding-bottom: 3rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1264,11 +1272,6 @@ select {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .pb-10 {
@@ -1547,14 +1550,14 @@ select {
   color: rgb(242 201 76 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2084,6 +2087,34 @@ select {
     width: 100%;
   }
 
+  .lg\:w-\[150px\] {
+    width: 150px;
+  }
+
+  .lg\:w-\[120px\] {
+    width: 120px;
+  }
+
+  .lg\:w-\[160px\] {
+    width: 160px;
+  }
+
+  .lg\:w-\[180px\] {
+    width: 180px;
+  }
+
+  .lg\:w-\[110px\] {
+    width: 110px;
+  }
+
+  .lg\:w-\[136px\] {
+    width: 136px;
+  }
+
+  .lg\:w-\[165px\] {
+    width: 165px;
+  }
+
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -2213,6 +2244,14 @@ select {
   }
 }
 
+@media (min-width: 640px) {
+  @media (min-width: 1280px) {
+    .sm\:xl\:w-\[165px\] {
+      width: 165px;
+    }
+  }
+}
+
 @media (min-width: 1280px) {
   .xl\:m-auto {
     margin: auto;
@@ -2288,6 +2327,34 @@ select {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .xl\:w-\[180px\] {
+    width: 180px;
+  }
+
+  .xl\:w-\[186px\] {
+    width: 186px;
+  }
+
+  .xl\:w-\[286px\] {
+    width: 286px;
+  }
+
+  .xl\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .xl\:w-\[148px\] {
+    width: 148px;
+  }
+
+  .xl\:w-\[100px\] {
+    width: 100px;
   }
 
   .xl\:flex-row {
@@ -2560,6 +2627,26 @@ select {
 
   .\32xl\:w-full {
     width: 100%;
+  }
+
+  .\32xl\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .\32xl\:w-\[168px\] {
+    width: 168px;
+  }
+
+  .\32xl\:w-\[114px\] {
+    width: 114px;
+  }
+
+  .\32xl\:w-\[150px\] {
+    width: 150px;
+  }
+
+  .\32xl\:w-\[160px\] {
+    width: 160px;
   }
 
   .\32xl\:grid-cols-6 {
@@ -2849,6 +2936,10 @@ select {
     width: 150px;
   }
 
+  .\33xl\:w-\[300px\] {
+    width: 300px;
+  }
+
   .\33xl\:w-\[30px\] {
     width: 30px;
   }
@@ -2885,8 +2976,16 @@ select {
     width: 100%;
   }
 
-  .\33xl\:w-\[300px\] {
-    width: 300px;
+  .\33xl\:w-\[240px\] {
+    width: 240px;
+  }
+
+  .\33xl\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .\33xl\:w-\[210px\] {
+    width: 210px;
   }
 
   .\33xl\:flex-col {
